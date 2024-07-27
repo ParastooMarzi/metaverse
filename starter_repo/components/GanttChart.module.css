@@ -1,60 +1,85 @@
-/* styles/GanttChart.module.css */
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap");
+
 .ganttChartContainer {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    font-family: 'Vazirmatn', sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    direction: rtl;
-  }
-  
-  .phase {
-    margin-bottom: 20px;
-    color: aliceblue;
-  }
-  
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Vazirmatn', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.phase {
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.phaseName {
+  font-weight: bold;
+  height: 2.5rem;
+  margin-bottom: 10px;
+  border-left: 4px solid;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.stepsContainer {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+  flex-wrap: wrap; /* Allows the steps to wrap in smaller screens */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem; /* Adjusted for better fit in small screens */
+  min-width: 100px; /* Minimum width to prevent overflow */
+  box-sizing: border-box;
+}
+
+.stepName {
+  font-size: 0.875rem; /* Adjusted for better fit in small screens */
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.stepDuration {
+  font-size: 0.75rem; /* Adjusted for better fit in small screens */
+  color: #ffd6d6;
+}
+
+.step:hover {
+  background-color: #ff00261e;
+}
+
+@media (max-width: 768px) {
   .phaseName {
-    font-weight: bold;
-    height: 2.5rem;
-    margin-bottom: 10px;
-    border-left: 4px solid;
-    padding-left: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
-  
+
   .stepsContainer {
-    display: flex;
-    gap: 10px;
-    font-size: 2rem;
+    flex-direction: column; /* Stack steps vertically on small screens */
   }
-  
+
   .step {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 0.875rem; /* Further adjust font size for very small screens */
+    padding: 5px; /* Reduce padding for smaller screens */
   }
-  
+
   .stepName {
-    font-size: 1rem;
-    text-align: center;
-    margin-bottom: 5px;
+    font-size: 0.75rem; /* Further adjust font size for very small screens */
   }
-  
+
   .stepDuration {
-    font-size: 0.875rem;
-    color: #ffd6d6;
+    font-size: 0.625rem; /* Further adjust font size for very small screens */
   }
-  
-  .step:hover {
-    background-color: #e9ecef;
-  }
-  
+}

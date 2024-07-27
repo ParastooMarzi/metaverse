@@ -35,7 +35,7 @@ const phases = [
   },
 ];
 
-const colors = ["#ff00263f", "#00793785", "#ffe6006b", "#00ffdd5b"];
+const colors = ["#ff00261e", "#0079372c", "#ffe6002a", "#00ffdd2c"];
 
 const GanttChart = () => {
   const totalMonths = phases.reduce((sum, phase) => sum + phase.duration.reduce((a, b) => a + b, 0), 0);
