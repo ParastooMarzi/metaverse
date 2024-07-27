@@ -25,7 +25,7 @@ const Explore = () => {
           title={<>در ادامه به فازبندی اجرایی پروژه و <br className="md:block hidden" /> تمامی موارد فنی می پردازیم</>}
           textStyles="text-center"
         />
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[180vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
