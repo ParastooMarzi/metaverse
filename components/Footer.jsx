@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -15,17 +14,12 @@ const Footer = () => (
   >
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      
-
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-
         <div className="flex items-center justify-between flex-wrap gap-4">
-          
           <p className="font-normal text-[14px] text-white opacity-50">
             Parastoo Marzi | Copyright © 2024. All rights reserved.
           </p>
-
           <div className="flex gap-4">
             {socials.map((social) => (
               <img
