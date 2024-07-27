@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -105,3 +108,4 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+

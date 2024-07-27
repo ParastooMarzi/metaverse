@@ -14,19 +14,7 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}>Ness</h1>
-        </motion.div>
-      </div>
+
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
@@ -37,7 +25,7 @@ const Hero = () => (
         <img
           src="/cover.png"
           alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          className="w-full sm:h-[600px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
 
         <a href="#explore">

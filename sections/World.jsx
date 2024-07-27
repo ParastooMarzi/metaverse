@@ -16,11 +16,11 @@ const World = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
 
-      <TypingText title="| People on the World" textStyles="text-center" />
+      <TypingText title="|نتیجه‌گیری" textStyles="text-center" />
       <TitleText
+      
         title={(
-          <>Track friends around you and invite them to play together in the same
-            world
+          <>این پروپزال به شرح جامع از تمامی مراحل طراحی و پیاده‌سازی سایت گردشگری با قابلیت خرید بلیط و رزرو هتل پرداخته است. با رعایت تمامی موارد فنی، طراحی، پشتیبانی و سئو، این پروژه می‌تواند به یکی از سایت‌های برتر در حوزه گردشگری تبدیل شود
           </>
         )}
         textStyles="text-center"

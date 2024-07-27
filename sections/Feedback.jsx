@@ -6,7 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
-  <section className={`${styles.paddings}`}>
+  <section className={`${styles.paddings}`} style={{direction:"rtl"}}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -21,17 +21,13 @@ const Feedback = () => (
         <div className="feedback-gradient" />
         <div>
           <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Samantha
+          درخواست تایید پروژه
           </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Metaverus
-          </p>
+          
         </div>
 
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, metaverse is very
-          useful for today's work, or can be called web 3.0. by using
-          metaverse you can use it as anything”
+        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white" style={{direction:"rtl"}}>
+          “با توجه به ارائه پروپوزال جامع و راهکارهای عملیاتی برای طراحی و پیاده‌سازی سایت گردشگری، از شما درخواست می‌کنیم با تایید این پروپوزال، اجازه دهید تیم ما به سرعت وارد مرحله اجرایی شود. ما متعهد به ارائه بهترین کیفیت و پشتیبانی در طول و پس از اجرای پروژه هستیم”
         </p>
       </motion.div>
 
